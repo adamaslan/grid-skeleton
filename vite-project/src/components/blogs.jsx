@@ -1,4 +1,5 @@
-const Blogs = ({ blogs }) => {
+import React from "react";
+const Blogs = ({ blogs, props }) => {
   return (
     <div className="container">
       {blogs.map((blog) => (
@@ -26,6 +27,11 @@ const Blogs = ({ blogs }) => {
           </footer>
         </div>
       ))}
+      <div className="main-cointainer">
+        <h2>Compnent2</h2>
+
+        <p>{props} </p>
+      </div>
     </div>
   );
 };
